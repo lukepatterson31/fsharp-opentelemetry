@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TriggerReportTest", "TriggerReportTest\TriggerReportTest.fsproj", "{E1FA737E-F127-41A3-8262-F3FA7B7B89B4}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsharpOTELWebApp", "FsharpOTELWebApp\FsharpOTELWebApp.fsproj", "{E1FA737E-F127-41A3-8262-F3FA7B7B89B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

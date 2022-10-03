@@ -2,7 +2,6 @@ open System
 open System.Threading.Tasks
 
 open Microsoft.AspNetCore.Builder
-open Microsoft.AspNetCore.Mvc
 open Microsoft.Extensions.Hosting
 open Microsoft.Extensions.DependencyInjection
 
@@ -14,7 +13,7 @@ let builder = WebApplication.CreateBuilder()
 
 // Backend config
 let serviceName = "trigger-reports"
-let exporterEndpoint = "http://127.0.0.1:4317"
+let exporterEndpoint = "http://127.0.0.1:4007"
 
 // Configure an exporter with some important info:
 //
