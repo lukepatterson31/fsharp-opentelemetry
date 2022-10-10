@@ -8,13 +8,17 @@ open OpenTelemetry.Trace
 
 [<EntryPoint>]
 let main (args: string[]) : int =
+    
+    // Set your collector endpoint here
+    // I use port 4317 which is the default gRpc endpoint 
     let collectorEndpoint : string = "http://127.0.0.1:4317"
     let serviceName : string = "trigger-reports"
 
     let builder =
         // Configure exporter with:
-        // - endpoint 
         // - service name
+        // - endpoint 
+        // - protocol (gRpc or Http)
         // - additional configuration as needed, e.g. headers
         Sdk.CreateTracerProviderBuilder()
             .AddSource(serviceName)
@@ -27,10 +31,12 @@ let main (args: string[]) : int =
             
     let tracer = builder.GetTracer(serviceName)
 
+    // Task simulating asynchronous code/external call
     let tracerTask =
             task {
-                // Task simulating asynchronous code/external call
+                // Start a span to monitor our "call"
                 use span = tracer.StartActiveSpan("sleep span")
+                // Set an attribute for our span
                 span.SetAttribute("duration_ms", 100) |> ignore
 
                 do! Task.Delay(100)
@@ -40,5 +46,7 @@ let main (args: string[]) : int =
 
     tracerTask.Wait()
 
+    // Wait here as the TracerProvider can be disposed
+    // before we send the trace to our OpenTelemetry collector
     Task.Delay(5000).Wait()
     0
