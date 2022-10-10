@@ -12,12 +12,16 @@ let main (args: string[]) : int =
     let serviceName : string = "trigger-reports"
 
     let builder =
+        // Configure exporter with:
+        // - endpoint 
+        // - service name
+        // - additional configuration as needed, e.g. headers
         Sdk.CreateTracerProviderBuilder()
             .AddSource(serviceName)
             .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService(serviceName))
             .AddOtlpExporter( fun opt ->
                 opt.Endpoint <- Uri collectorEndpoint
-                opt.Protocol <- OtlpExportProtocol.Grpc
+                opt.Protocol <- OtlpExportProtocol.Grpc                
                 )
             .Build()
             
@@ -25,7 +29,7 @@ let main (args: string[]) : int =
 
     let tracerTask =
             task {
-                // Track the work done in the root HTTP handler
+                // Task simulating asynchronous code/external call
                 use span = tracer.StartActiveSpan("sleep span")
                 span.SetAttribute("duration_ms", 100) |> ignore
 

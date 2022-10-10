@@ -15,11 +15,11 @@ let builder = WebApplication.CreateBuilder()
 let serviceName = "trigger-reports"
 let exporterEndpoint = "http://127.0.0.1:4007"
 
-// Configure an exporter with some important info:
-//
-// - endpoint stuff you might need (e.g., headers)
-// - make sure the service name is set up
+// Configure an exporter with:
+// - endpoint 
+// - service name
 // - configure some automatic instrumentation
+// - additional configuration as needed, e.g. headers
 builder.Services.AddOpenTelemetryTracing(fun builder ->
     builder
         .AddSource(serviceName)
@@ -39,7 +39,7 @@ builder.Services.AddOpenTelemetryTracing(fun builder ->
 // Start a tracer scoped to the service
 let tracer = TracerProvider.Default.GetTracer(serviceName)
 
-// Add the handler to the root route using .NET 6 APIs!
+// Add the handler to the root route
 let app = builder.Build()
 app.MapGet("/", Func<Task<string>>(fun () -> task {
         // Track the work done in the root HTTP handler
