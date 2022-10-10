@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "H0TkoLNsi/scLKjXYl4IsMwrsJwTSHsB83o4zXZA4ICQrz7Au6IVl0Oevirtn3XqpZL7CiBRVY4zpzR+yCcLmA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pattro01\\code\\FsharpOTELConsoleApp\\FsharpOTELConsoleApp\\FsharpOTELConsoleApp.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pattro01\\.nuget\\packages\\fsharp.core\\6.0.1\\fsharp.core.6.0.1.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\grpc.core.api\\2.43.0\\grpc.core.api.2.43.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\grpc.net.client\\2.43.0\\grpc.net.client.2.43.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\grpc.net.common\\2.43.0\\grpc.net.common.2.43.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.0\\microsoft.extensions.configuration.3.1.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.0\\microsoft.extensions.configuration.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.0\\microsoft.extensions.configuration.binder.3.1.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.0\\microsoft.extensions.dependencyinjection.3.1.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.0\\microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\microsoft.extensions.logging\\3.1.0\\microsoft.extensions.logging.3.1.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.0\\microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\microsoft.extensions.logging.configuration\\3.1.0\\microsoft.extensions.logging.configuration.3.1.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\microsoft.extensions.options\\3.1.0\\microsoft.extensions.options.3.1.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.0\\microsoft.extensions.options.configurationextensions.3.1.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\opentelemetry\\1.4.0-beta.1\\opentelemetry.1.4.0-beta.1.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\opentelemetry.api\\1.4.0-beta.1\\opentelemetry.api.1.4.0-beta.1.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\opentelemetry.exporter.opentelemetryprotocol\\1.4.0-beta.1\\opentelemetry.exporter.opentelemetryprotocol.1.4.0-beta.1.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.0-rc.1.22426.10\\system.diagnostics.diagnosticsource.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\pattro01\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
