@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsharpOTELConsoleApp", "FsharpOTELConsoleApp\FsharpOTELConsoleApp.fsproj", "{2F78E42D-4616-4FB0-B1EA-8F43B3CEBFE3}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsharpOTELConsoleApp", "FsharpOTELConsoleApp\FsharpOTELConsoleApp.fsproj", "{D593D6CA-F94A-49B4-8E5E-0E2B810D326D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F78E42D-4616-4FB0-B1EA-8F43B3CEBFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F78E42D-4616-4FB0-B1EA-8F43B3CEBFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F78E42D-4616-4FB0-B1EA-8F43B3CEBFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F78E42D-4616-4FB0-B1EA-8F43B3CEBFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D593D6CA-F94A-49B4-8E5E-0E2B810D326D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D593D6CA-F94A-49B4-8E5E-0E2B810D326D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D593D6CA-F94A-49B4-8E5E-0E2B810D326D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D593D6CA-F94A-49B4-8E5E-0E2B810D326D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
