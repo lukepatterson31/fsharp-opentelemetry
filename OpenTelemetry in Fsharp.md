@@ -1,4 +1,4 @@
-# Using tracing with OpenTelemetry in F#
+# Using tracing with OpenTelemetry in F\#
 
 Implement an OpenTelemetry trace exporter in an F# console and web app
 
@@ -30,10 +30,10 @@ let collectorEndpoint : string = "http://127.0.0.1:4317"
 let serviceName : string = "trigger-reports"  
 
 let builder =  
-	// Configure exporter with:  
-	// - service name        
-	// - endpoint  
-	// - protocol (gRpc or Http)        
+	// Add the service name as a source to the TracerProvider  
+	// Configure the exporter with:  
+	// - endpoint of your OpenTelemetry collector  
+	// - protocol (gRpc or Http)  
 	// - additional configuration as needed, e.g. headers        
 	Sdk.CreateTracerProviderBuilder()  
 		.AddSource(serviceName)  
@@ -41,7 +41,7 @@ let builder =
 		.AddOtlpExporter( fun opt ->  
 			opt.Endpoint <- Uri collectorEndpoint  
 			opt.Protocol <- OtlpExportProtocol.Grpc                  
-)  
+			)  
 		.Build()
 ```
 
@@ -90,11 +90,11 @@ let main (args: string[]) : int =
     let serviceName : string = "trigger-reports"  
   
     let builder =  
-        // Configure exporter with:  
-        // - service name        
-        // - endpoint  
-        // - protocol (gRpc or Http)        
-        // - additional configuration as needed, e.g. headers        
+		// Add the service name as a source to the TracerProvider  
+		// Configure the exporter with:  
+		// - endpoint of your OpenTelemetry collector  
+		// - protocol (gRpc or Http)  
+		// - additional configuration as needed, e.g. headers        
         Sdk.CreateTracerProviderBuilder()  
             .AddSource(serviceName)  
             .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService(serviceName))  

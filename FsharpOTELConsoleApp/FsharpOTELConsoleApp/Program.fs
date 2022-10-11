@@ -15,9 +15,9 @@ let main (args: string[]) : int =
     let serviceName : string = "trigger-reports"
 
     let builder =
-        // Configure exporter with:
-        // - service name
-        // - endpoint 
+        // Add the service name as a source to the TracerProvider
+        // Configure the exporter with:
+        // - endpoint of your OpenTelemetry collector
         // - protocol (gRpc or Http)
         // - additional configuration as needed, e.g. headers
         Sdk.CreateTracerProviderBuilder()
